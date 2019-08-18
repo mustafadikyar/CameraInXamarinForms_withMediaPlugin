@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CameraApp.MainPage">
+
+    <StackLayout Orientation="Vertical">
+        
+        <Button Text="Take a photo"
+               BackgroundColor="Teal"
+               TextColor="White"
+               FontSize="30"
+               Clicked="TakePhoto_OnClicked"/>
+
+        <Button Text="Pick a photo"
+                BackgroundColor="Maroon"
+                TextColor="White"
+                FontSize="30"
+                Clicked="PickPhoto_OnClicked"/>
+
+        <Button Text="Take a video"
+               BackgroundColor="Olive"
+               TextColor="White"
+               FontSize="30"
+               Clicked="TakeVideo_OnClicked"/>
+
+        <Button Text="Pick a video"
+                BackgroundColor="Navy"
+                TextColor="White"
+                FontSize="30"
+                Clicked="PickVideo_OnClicked"/>
+
+        <Image x:Name="MainImage"/>
+        
+        <Label x:Name="PathLabel"
+               FontSize="14"
+               TextColor="Black"/>
+
+
+    </StackLayout>
+
+</ContentPage>
